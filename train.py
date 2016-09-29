@@ -52,12 +52,3 @@ features_transform1 = scaler.transform(features1)
 #predict values using model and save predicted values
 result = themodel.predict(features_transform1)
 result.repartition(1).saveAsTextFile('tmp/boston/predicted3')
-
-
-
-
-
-
-
-
-#df.show(5)
